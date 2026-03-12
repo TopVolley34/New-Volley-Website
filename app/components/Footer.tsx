@@ -7,11 +7,15 @@ export default function Footer() {
       <div style={{ backgroundColor: '#1d3461', padding: '4rem 0 3rem' }}>
         <div className="container">
           <div className="footer-grid">
+            {/* Brand */}
             <div>
               <div style={{ marginBottom: '1.5rem' }}>
                 <img src="/images/volley-logo.png.webp" alt="Volley" style={{ height: '36px', display: 'block' }} />
               </div>
-              <div style={{ display: 'flex', gap: '0.75rem', marginBottom: '1.5rem' }}>
+              <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem', lineHeight: 1.7, marginBottom: '1.5rem', maxWidth: '280px' }}>
+                The first objective rating and assessment system for racquet sports. Know your game. Grow your club.
+              </p>
+              <div style={{ display: 'flex', gap: '0.75rem' }}>
                 {[
                   { label: 'Instagram', icon: 'M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z' },
                   { label: 'Facebook', icon: 'M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z' },
@@ -28,25 +32,13 @@ export default function Footer() {
                   </a>
                 ))}
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                <a href="#"><img src="/images/apple_dload.webp" alt="Download on the App Store" style={{ height: '40px', display: 'block' }} /></a>
-                <a href="#"><img src="/images/google_dload.webp" alt="Get it on Google Play" style={{ height: '40px', display: 'block' }} /></a>
-              </div>
             </div>
 
+            {/* Product */}
             <div>
-              <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, color: 'white', fontSize: '0.85rem', letterSpacing: '0.08em', marginBottom: '1.25rem', textTransform: 'uppercase' }}>How Volley Works</h4>
-              <Link href="/trainer" style={{ display: 'block', color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', marginBottom: '0.6rem', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.06em' }}
-                onMouseEnter={e => (e.currentTarget.style.color = '#3CE97C')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.5)')}>
-                Trainer
-              </Link>
-            </div>
-
-            <div>
-              <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, color: 'white', fontSize: '0.85rem', letterSpacing: '0.08em', marginBottom: '1.25rem', textTransform: 'uppercase' }}>Help</h4>
-              {[['Getting Started', '/getstarted'], ['Support', '/support'], ['FAQs', '/faqs']].map(([label, href]) => (
-                <Link key={href} href={href} style={{ display: 'block', color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', marginBottom: '0.6rem', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.06em' }}
+              <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, color: 'white', fontSize: '0.85rem', letterSpacing: '0.08em', marginBottom: '1.25rem', textTransform: 'uppercase' }}>Product</h4>
+              {[['Assessments', '/assessments'], ['For Clubs', '/for-clubs'], ['For Players', '/for-players'], ['Pricing', '/pricing']].map(([label, href]) => (
+                <Link key={href} href={href} style={{ display: 'block', color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', marginBottom: '0.6rem', textDecoration: 'none', letterSpacing: '0.04em' }}
                   onMouseEnter={e => (e.currentTarget.style.color = '#3CE97C')}
                   onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.5)')}>
                   {label}
@@ -54,30 +46,31 @@ export default function Footer() {
               ))}
             </div>
 
+            {/* Sports */}
+            <div>
+              <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, color: 'white', fontSize: '0.85rem', letterSpacing: '0.08em', marginBottom: '1.25rem', textTransform: 'uppercase' }}>Sports</h4>
+              {[['Pickleball', '/pickleball'], ['Padel', '/padel']].map(([label, href]) => (
+                <Link key={href} href={href} style={{ display: 'block', color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', marginBottom: '0.6rem', textDecoration: 'none', letterSpacing: '0.04em' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = '#3CE97C')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.5)')}>
+                  {label}
+                </Link>
+              ))}
+              <span style={{ display: 'block', color: 'rgba(255,255,255,0.3)', fontSize: '0.8rem', marginTop: '0.5rem' }}>
+                Also: Platform Tennis, Tennis
+              </span>
+            </div>
+
+            {/* Company */}
             <div>
               <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, color: 'white', fontSize: '0.85rem', letterSpacing: '0.08em', marginBottom: '1.25rem', textTransform: 'uppercase' }}>Company</h4>
-              {[['Team', '/about-us'], ['News', '/news'], ['Blog', '/blogs'], ['Case Studies', '/customer-success-stories']].map(([label, href]) => (
-                <Link key={href} href={href} style={{ display: 'block', color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', marginBottom: '0.6rem', textDecoration: 'none', textTransform: 'uppercase', letterSpacing: '0.06em' }}
+              {[['About', '/about-us'], ['Customer Stories', '/customer-success-stories'], ['Blog', '/blogs'], ['Get a Demo', '/get-a-demo']].map(([label, href]) => (
+                <Link key={href} href={href} style={{ display: 'block', color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', marginBottom: '0.6rem', textDecoration: 'none', letterSpacing: '0.04em' }}
                   onMouseEnter={e => (e.currentTarget.style.color = '#3CE97C')}
                   onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.5)')}>
                   {label}
                 </Link>
               ))}
-            </div>
-
-            <div>
-              <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, color: 'white', fontSize: '0.85rem', letterSpacing: '0.08em', marginBottom: '1.25rem', textTransform: 'uppercase' }}>Subscribe To Our Newsletter</h4>
-              <div style={{ position: 'relative', marginBottom: '1.5rem' }}>
-                <input type="email" placeholder="Your email address*"
-                  style={{ width: '100%', backgroundColor: 'transparent', border: 'none', borderBottom: '1px solid #3CE97C', padding: '0.6rem 2.5rem 0.6rem 0', color: 'white', fontSize: '0.9rem', outline: 'none' }}
-                />
-                <button style={{ position: 'absolute', right: 0, top: '50%', transform: 'translateY(-50%)', width: '32px', height: '32px', borderRadius: '50%', backgroundColor: '#3CE97C', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="#132751" strokeWidth="2.5" style={{ width: '14px', height: '14px' }}>
-                    <path d="M7 17L17 7M17 7H7M17 7v10"/>
-                  </svg>
-                </button>
-              </div>
-              <img src="/images/usa.png" alt="Made in USA" style={{ width: '70px', display: 'block' }} />
             </div>
           </div>
         </div>
@@ -104,18 +97,17 @@ export default function Footer() {
       <style>{`
         .footer-grid {
           display: grid;
-          grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+          grid-template-columns: 2fr 1fr 1fr 1fr;
           gap: 2rem;
           margin-bottom: 3rem;
         }
-        @media (max-width: 1100px) {
-          .footer-grid { grid-template-columns: 1fr 1fr 1fr; gap: 2rem; }
+        @media (max-width: 768px) {
+          .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
           .footer-grid > div:first-child { grid-column: 1 / -1; }
         }
-        @media (max-width: 640px) {
-          .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-          .footer-grid > div:first-child { grid-column: 1 / -1; }
-          .footer-grid > div:last-child { grid-column: 1 / -1; }
+        @media (max-width: 480px) {
+          .footer-grid { grid-template-columns: 1fr; }
+          .footer-grid > div:first-child { grid-column: auto; }
         }
       `}</style>
     </footer>
