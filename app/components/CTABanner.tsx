@@ -8,9 +8,9 @@ export default function CTABanner({ variant = 'club' }: { variant?: 'club' | 'pl
     general: 'See what Assessments can do for your game.',
   };
   const ctas: Record<string, { label: string; href: string }> = {
-    club: { label: 'GET A DEMO', href: '/get-a-demo' },
+    club: { label: "LET'S TALK", href: '/contact-us' },
     player: { label: 'FIND A CLUB', href: '/for-players' },
-    general: { label: 'GET A DEMO', href: '/get-a-demo' },
+    general: { label: "LET'S TALK", href: '/contact-us' },
   };
 
   return (

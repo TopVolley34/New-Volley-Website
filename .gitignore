@@ -42,3 +42,9 @@ next-env.d.ts
 
 # zip archives
 *.zip
+
+# large video files (host via Cloudflare Stream or CDN instead)
+*.mp4
+*.mov
+*.avi
+*.webm

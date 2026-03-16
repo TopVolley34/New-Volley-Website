@@ -21,7 +21,7 @@ export default function PickleballPage() {
               <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', lineHeight: 1.7, marginBottom: '2.5rem' }}>
                 Volley Assessments gives pickleball clubs and players the first AI-powered assessment tool — delivering objective ratings, personalized improvement plans, and better-matched competition.
               </p>
-              <Link href="/get-a-demo"
+              <Link href="/contact-us"
                 style={{ display: 'inline-block', backgroundColor: '#3CE97C', color: '#132751', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, padding: '16px 36px', borderRadius: '9999px', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.2s' }}
                 onMouseEnter={e => e.currentTarget.style.backgroundColor = 'white'}
                 onMouseLeave={e => e.currentTarget.style.backgroundColor = '#3CE97C'}>

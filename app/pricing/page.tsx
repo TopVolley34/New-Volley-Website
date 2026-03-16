@@ -17,7 +17,7 @@ export default function PricingPage() {
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.15rem', lineHeight: 1.7, maxWidth: '600px', margin: '0 auto 3rem' }}>
               Pricing scales with your club. Everything you need is included — hardware, software, support, and automatic updates.
             </p>
-            <Link href="/get-a-demo"
+            <Link href="/contact-us"
               style={{ display: 'inline-block', backgroundColor: '#3CE97C', color: '#132751', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, padding: '16px 36px', borderRadius: '9999px', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.2s' }}
               onMouseEnter={e => e.currentTarget.style.backgroundColor = 'white'}
               onMouseLeave={e => e.currentTarget.style.backgroundColor = '#3CE97C'}>
@@ -80,7 +80,7 @@ export default function PricingPage() {
                   <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, fontSize: '1.15rem', color: 'white', marginBottom: '0.5rem' }}>{tier.name}</h3>
                   <p style={{ color: '#3CE97C', fontFamily: 'Montserrat, sans-serif', fontWeight: 600, fontSize: '0.85rem', marginBottom: '1rem' }}>{tier.size}</p>
                   <p style={{ color: 'rgba(255,255,255,0.5)', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '1.5rem' }}>{tier.desc}</p>
-                  <Link href="/get-a-demo"
+                  <Link href="/contact-us"
                     style={{ display: 'inline-block', backgroundColor: 'transparent', color: 'white', fontFamily: 'Montserrat, sans-serif', fontWeight: 600, padding: '10px 24px', borderRadius: '9999px', fontSize: '0.85rem', textDecoration: 'none', border: '1px solid rgba(255,255,255,0.3)', transition: 'all 0.2s' }}
                     onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#3CE97C'; e.currentTarget.style.color = '#132751'; e.currentTarget.style.borderColor = '#3CE97C'; }}
                     onMouseLeave={e => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = 'white'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)'; }}>
@@ -104,7 +104,7 @@ export default function PricingPage() {
             <p style={{ color: 'rgba(19,39,81,0.6)', fontSize: '1rem', lineHeight: 1.7, marginBottom: '2rem' }}>
               Book a demo to discuss your club, see Assessments in action, and get pricing that works for you.
             </p>
-            <Link href="/get-a-demo"
+            <Link href="/contact-us"
               style={{ display: 'inline-block', backgroundColor: '#3CE97C', color: '#132751', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, padding: '16px 36px', borderRadius: '9999px', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.2s' }}
               onMouseEnter={e => e.currentTarget.style.backgroundColor = '#132751'}
               onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#3CE97C'; e.currentTarget.style.color = '#132751'; }}

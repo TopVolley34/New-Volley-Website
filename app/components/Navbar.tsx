@@ -41,12 +41,12 @@ export default function Navbar() {
 
             {/* CTA + Hamburger */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-              <Link href="/get-a-demo"
+              <Link href="/contact-us"
                 style={{ backgroundColor: '#3CE97C', color: '#132751', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, padding: '10px 24px', borderRadius: '34px', fontSize: '14px', transition: 'all 0.2s', textDecoration: 'none', whiteSpace: 'nowrap' }}
                 className="cta-desktop"
                 onMouseEnter={e => { e.currentTarget.style.backgroundColor = 'white'; }}
                 onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#3CE97C'; }}>
-                Get a Demo
+                Let&apos;s Talk
               </Link>
               <button
                 className="nav-hamburger"
@@ -90,9 +90,9 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link href="/get-a-demo" onClick={() => setMobileOpen(false)}
+          <Link href="/contact-us" onClick={() => setMobileOpen(false)}
             style={{ display: 'block', backgroundColor: '#3CE97C', color: '#132751', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, padding: '14px', borderRadius: '34px', textAlign: 'center', marginTop: '1.5rem', textDecoration: 'none', fontSize: '16px' }}>
-            Get a Demo
+            Let&apos;s Talk
           </Link>
         </div>
       </div>

@@ -19,7 +19,7 @@ export default function ForPlayersPage() {
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '1.1rem', lineHeight: 1.7, maxWidth: '600px', margin: '0 auto 3rem' }}>
               You know exactly what to work on and how fast you&apos;re improving. Volley Assessments gives you an objective rating, a gap analysis, and a clear path to getting better faster.
             </p>
-            <Link href="/get-a-demo"
+            <Link href="/contact-us"
               style={{ display: 'inline-block', backgroundColor: '#3CE97C', color: '#132751', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, padding: '16px 36px', borderRadius: '9999px', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.2s' }}
               onMouseEnter={e => e.currentTarget.style.backgroundColor = 'white'}
               onMouseLeave={e => e.currentTarget.style.backgroundColor = '#3CE97C'}>
@@ -125,7 +125,7 @@ export default function ForPlayersPage() {
             <p style={{ color: 'rgba(19,39,81,0.6)', fontSize: '1rem', lineHeight: 1.7, marginBottom: '2rem' }}>
               Find a club near you that uses Volley, or tell your club about us — and get your first assessment.
             </p>
-            <Link href="/get-a-demo"
+            <Link href="/contact-us"
               style={{ display: 'inline-block', backgroundColor: '#132751', color: 'white', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, padding: '14px 32px', borderRadius: '9999px', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.2s' }}
               onMouseEnter={e => { e.currentTarget.style.backgroundColor = '#3CE97C'; e.currentTarget.style.color = '#132751'; }}
               onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#132751'; e.currentTarget.style.color = 'white'; }}>

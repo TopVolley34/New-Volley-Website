@@ -254,7 +254,7 @@ function FinalCTA() {
         <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '1rem', maxWidth: '500px', margin: '0 auto 2.5rem', lineHeight: 1.7 }}>
           Book a demo to see how objective ratings can transform your club&apos;s racquet sports program.
         </p>
-        <Link href="/get-a-demo"
+        <Link href="/contact-us"
           style={{ display: 'inline-block', backgroundColor: '#3CE97C', color: '#080F20', fontFamily: 'Montserrat, sans-serif', fontWeight: 800, padding: '1rem 2.5rem', borderRadius: '9999px', fontSize: '1rem', textDecoration: 'none', letterSpacing: '0.05em', transition: 'all 0.2s' }}
           onMouseEnter={e => { e.currentTarget.style.backgroundColor = 'white'; }}
           onMouseLeave={e => { e.currentTarget.style.backgroundColor = '#3CE97C'; }}>

@@ -20,7 +20,7 @@ export default function AssessmentsPage() {
               Stop guessing where you stand. Volley Assessments delivers AI-powered, data-driven player ratings for pickleball, padel, platform tennis, and tennis.
             </p>
             <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/get-a-demo"
+              <Link href="/contact-us"
                 style={{ display: 'inline-block', backgroundColor: '#3CE97C', color: '#132751', fontFamily: 'Montserrat, sans-serif', fontWeight: 700, padding: '14px 32px', borderRadius: '9999px', fontSize: '1rem', textDecoration: 'none', transition: 'all 0.2s' }}
                 onMouseEnter={e => e.currentTarget.style.backgroundColor = 'white'}
                 onMouseLeave={e => e.currentTarget.style.backgroundColor = '#3CE97C'}>

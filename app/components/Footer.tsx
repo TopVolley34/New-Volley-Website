@@ -64,7 +64,7 @@ export default function Footer() {
             {/* Company */}
             <div>
               <h4 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 700, color: 'white', fontSize: '0.85rem', letterSpacing: '0.08em', marginBottom: '1.25rem', textTransform: 'uppercase' }}>Company</h4>
-              {[['About', '/about-us'], ['Customer Stories', '/customer-success-stories'], ['Blog', '/blogs'], ['Get a Demo', '/get-a-demo']].map(([label, href]) => (
+              {[['About', '/about-us'], ['Customer Stories', '/customer-success-stories'], ['Blog', '/blogs'], ["Let's Talk", '/contact-us']].map(([label, href]) => (
                 <Link key={href} href={href} style={{ display: 'block', color: 'rgba(255,255,255,0.5)', fontSize: '0.85rem', marginBottom: '0.6rem', textDecoration: 'none', letterSpacing: '0.04em' }}
                   onMouseEnter={e => (e.currentTarget.style.color = '#3CE97C')}
                   onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.5)')}>
@@ -78,7 +78,7 @@ export default function Footer() {
 
       <div style={{ backgroundColor: '#0f1e3d', padding: '1.25rem 0' }}>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '0.75rem' }}>
-          <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', margin: 0 }}>Copyright © 2025 Volley. All rights reserved.</p>
+          <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', margin: 0 }}>Copyright © 2026 Volley. All rights reserved.</p>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             <Link href="/privacy" style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.8rem', textDecoration: 'none' }}
               onMouseEnter={e => (e.currentTarget.style.color = 'white')}
