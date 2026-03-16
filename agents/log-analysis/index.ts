@@ -33,8 +33,11 @@ async function vercelFetch(path: string, params: Record<string, string> = {}) {
   return res.json();
 }
 
+// Tool dispatch type
+type ToolArgs = Record<string, string>;
+
 // Tool implementations
-async function getPageViews(args: { period: string; limit?: string }) {
+async function getPageViews(args: ToolArgs) {
   const { period = '30d', limit = '20' } = args;
   return vercelFetch(`/web/insights/stats/path`, {
     projectId: VERCEL_PROJECT_ID!,
@@ -44,7 +47,7 @@ async function getPageViews(args: { period: string; limit?: string }) {
   });
 }
 
-async function getReferrers(args: { period: string; limit?: string }) {
+async function getReferrers(args: ToolArgs) {
   const { period = '30d', limit = '20' } = args;
   return vercelFetch(`/web/insights/stats/referrer`, {
     projectId: VERCEL_PROJECT_ID!,
@@ -54,7 +57,7 @@ async function getReferrers(args: { period: string; limit?: string }) {
   });
 }
 
-async function getCountries(args: { period: string; limit?: string }) {
+async function getCountries(args: ToolArgs) {
   const { period = '30d', limit = '20' } = args;
   return vercelFetch(`/web/insights/stats/country`, {
     projectId: VERCEL_PROJECT_ID!,
@@ -64,7 +67,7 @@ async function getCountries(args: { period: string; limit?: string }) {
   });
 }
 
-async function getDevices(args: { period: string }) {
+async function getDevices(args: ToolArgs) {
   const { period = '30d' } = args;
   return vercelFetch(`/web/insights/stats/device`, {
     projectId: VERCEL_PROJECT_ID!,
@@ -73,7 +76,7 @@ async function getDevices(args: { period: string }) {
   });
 }
 
-async function getBrowsers(args: { period: string; limit?: string }) {
+async function getBrowsers(args: ToolArgs) {
   const { period = '30d', limit = '10' } = args;
   return vercelFetch(`/web/insights/stats/browser`, {
     projectId: VERCEL_PROJECT_ID!,
@@ -83,7 +86,7 @@ async function getBrowsers(args: { period: string; limit?: string }) {
   });
 }
 
-async function getOperatingSystems(args: { period: string; limit?: string }) {
+async function getOperatingSystems(args: ToolArgs) {
   const { period = '30d', limit = '10' } = args;
   return vercelFetch(`/web/insights/stats/os`, {
     projectId: VERCEL_PROJECT_ID!,
@@ -191,8 +194,6 @@ const tools: Anthropic.Messages.Tool[] = [
 ];
 
 // Tool dispatch
-type ToolArgs = Record<string, string>;
-
 async function executeTool(name: string, args: ToolArgs): Promise<string> {
   try {
     let result;
